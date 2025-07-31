@@ -1,0 +1,3 @@
+*.xcodeproj/userdata
+*.xcworkspace/userdata/
+.DS_Store
