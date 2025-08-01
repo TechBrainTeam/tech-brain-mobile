@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EC8752162E3C41C100E358F6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EC8752152E3C41C100E358F6 /* Alamofire */; };
+		EC8752192E3C422D00E358F6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC8752182E3C422D00E358F6 /* SnapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		EC8751E32E3C2CF800E358F6 /* FobiniYen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FobiniYen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -14,7 +19,7 @@
 		EC8751F52E3C2CF900E358F6 /* Exceptions for "FobiniYen" folder in "FobiniYen" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resources/Info.plist,
 			);
 			target = EC8751E22E3C2CF800E358F6 /* FobiniYen */;
 		};
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8752162E3C41C100E358F6 /* Alamofire in Frameworks */,
+				EC8752192E3C422D00E358F6 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = FobiniYen;
 			packageProductDependencies = (
+				EC8752152E3C41C100E358F6 /* Alamofire */,
+				EC8752182E3C422D00E358F6 /* SnapKit */,
 			);
 			productName = FobiniYen;
 			productReference = EC8751E32E3C2CF800E358F6 /* FobiniYen.app */;
@@ -107,6 +116,10 @@
 			);
 			mainGroup = EC8751DA2E3C2CF800E358F6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EC8752142E3C41C100E358F6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EC8752172E3C422D00E358F6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EC8751E42E3C2CF800E358F6 /* Products */;
 			projectDirPath = "";
@@ -147,7 +160,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2QAS44S4GM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FobiniYen/Info.plist;
+				INFOPLIST_FILE = FobiniYen/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -174,7 +187,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2QAS44S4GM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FobiniYen/Info.plist;
+				INFOPLIST_FILE = FobiniYen/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -333,6 +346,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC8752142E3C41C100E358F6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		EC8752172E3C422D00E358F6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC8752152E3C41C100E358F6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC8752142E3C41C100E358F6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		EC8752182E3C422D00E358F6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC8752172E3C422D00E358F6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC8751DB2E3C2CF800E358F6 /* Project object */;
 }
